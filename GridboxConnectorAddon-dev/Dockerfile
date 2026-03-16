@@ -28,7 +28,7 @@ ENV LOGFIRE_TOKEN_EDGE=${LOGFIRE_TOKEN_EDGE}
 
 RUN \
   apk add --no-cache \
-  python3 py3-pip
+  python3 py3-pip git
 RUN ln -sf python3 /usr/bin/python
 COPY rootfs /
 
@@ -47,4 +47,3 @@ COPY cloudSettings.json /build/cloudSettings.json
 RUN cd /build/GridboxConnector && pip install -r requirements.txt
 
 COPY rootfs /
-
