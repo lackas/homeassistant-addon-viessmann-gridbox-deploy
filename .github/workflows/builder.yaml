@@ -1,6 +1,7 @@
 name: Builder
 permissions:
   contents: read
+  packages: write
   pull-requests: write
 env:
   BUILD_ARGS: "--test"
@@ -104,7 +105,7 @@ jobs:
         if: env.BUILD_ARGS != '--test'
         with:
           coverageFile: ./${{ matrix.addon }}/GridboxConnector/coverage.xml
-          token: ${{ secrets.TOKEN }}
+          token: ${{ github.token }}
 
       - name: Login to GitHub Container Registry
         if: env.BUILD_ARGS != '--test'
@@ -112,7 +113,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.TOKEN }}
+          password: ${{ github.token }}
 
       - name: Build ${{ matrix.addon }} add-on
         if: steps.check.outputs.build_arch == 'true'
