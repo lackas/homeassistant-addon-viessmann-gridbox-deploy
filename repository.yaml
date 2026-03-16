@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
-name: Homeassistant Viessmann Gridbox Connector add-on repository
+name: Viessmann Gridbox Connector (lackas fork)
 url: 'https://github.com/lackas/homeassistant-addon-viessmann-gridbox-deploy'
 maintainer: lackas
