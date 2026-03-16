@@ -4,7 +4,7 @@ name: Viessmann Gridbox Connector (edge)
 version: "3.1.8"
 slug: "gridbox_connector_edge"
 description: "Viessmann Gridbox Connector (edge)"
-url: "https://github.com/lackas/homeassistant-addon-viessmann-gridbox/tree/main/GridboxConnectorAddon-edge"
+url: "https://github.com/lackas/homeassistant-addon-viessmann-gridbox-deploy/tree/main/GridboxConnectorAddon-edge"
 arch:
   - aarch64
   - amd64
@@ -35,5 +35,5 @@ schema:
   enable_telemetry: bool
   log_level_telemetry: list(DEBUG|INFO|WARNING|ERROR)
   OverrideLogfireToken: str?
-image: ghcr.io/lackas/homeassistant-addon-viessmann-gridbox-edge-{arch}
+image: ghcr.io/lackas/homeassistant-addon-viessmann-gridbox-deploy-edge-{arch}
 stage: experimental
