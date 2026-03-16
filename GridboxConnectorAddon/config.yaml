@@ -1,9 +1,9 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Viessmann Gridbox Connector
-version: "3.1.8"
+version: "3.1.9"
 slug: "gridbox_connector"
 description: Fetch your live data from your Viessmann Gridbox
-url: "https://github.com/unl0ck/homeassistant-addon-viessmann-gridbox/tree/main/GridboxConnectorAddon"
+url: "https://github.com/lackas/homeassistant-addon-viessmann-gridbox/tree/main/GridboxConnectorAddon"
 arch:
   - aarch64
   - amd64
@@ -34,4 +34,4 @@ schema:
   enable_telemetry: bool
   log_level_telemetry: list(DEBUG|INFO|WARNING|ERROR)
   OverrideLogfireToken: str?
-image: ghcr.io/unl0ck/homeassistant-addon-viessmann-gridbox-{arch}
+image: ghcr.io/lackas/homeassistant-addon-viessmann-gridbox-{arch}

@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: Homeassistant Viessmann Gridbox Connector add-on repository
-url: 'https://github.com/unl0ck/homeassistant-addon-viessmann-gridbox'
-maintainer: unl0ck
+url: 'https://github.com/lackas/homeassistant-addon-viessmann-gridbox'
+maintainer: lackas
