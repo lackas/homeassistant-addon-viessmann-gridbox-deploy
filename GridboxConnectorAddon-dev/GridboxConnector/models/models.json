@@ -178,6 +178,7 @@
       "name": "HeatPumpPower",
       "unit": "W",
       "device_class": "power",
+      "state_class": "measurement",
       "factor": 1,
       "unique_id": "heatpump_power"
     },
