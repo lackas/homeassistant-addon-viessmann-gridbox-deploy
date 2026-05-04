@@ -101,7 +101,7 @@ jobs:
           coverage xml -o coverage.xml
 
       - name: Get Cover
-        uses: orgoro/coverage@v3.2
+        uses: orgoro/coverage@v3.3
         if: env.BUILD_ARGS != '--test'
         with:
           coverageFile: ./${{ matrix.addon }}/GridboxConnector/coverage.xml
